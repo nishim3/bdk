@@ -19,6 +19,7 @@ use bdk_chain::{
     },
     Anchor, Append, ChainOracle, DescriptorExt, FullTxOut, Persist, PersistBackend,
 };
+error;
 pub use bdk_file_store;
 pub use clap;
 

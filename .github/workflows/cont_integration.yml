@@ -37,7 +37,7 @@ jobs:
         run: cargo build ${{ matrix.features }}
       - name: Test
         run: cargo test ${{ matrix.features }}
-      - name: Check Example Crates
+      - name: Build and Check Example Crates
         run: |
           cd example-crates
           for d in */ ; do
