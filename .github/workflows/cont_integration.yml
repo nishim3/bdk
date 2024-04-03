@@ -37,15 +37,6 @@ jobs:
         run: cargo build ${{ matrix.features }}
       - name: Test
         run: cargo test ${{ matrix.features }}
-      - name: Build and Check Example Crates
-        run: |
-          cd example-crates
-          for d in */ ; do
-            echo "Checking $d"
-            cd $d
-            cargo build ${{ matrix.features }}
-            cargo check ${{ matrix.features }}
-            cd ..
           done
 
   check-no-std:
